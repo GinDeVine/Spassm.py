@@ -27,4 +27,4 @@ E_n depends on the parameter before the colon. If no parameter or colon given, i
 Keep in mind this is uses XOR to encrypt, which can be analyzed to figure out the hidden content. To make the analyzing harder, use multiple keys, preferebly large prime numbers or huge numbers like 242**223+14221.
 <br/><br/>
 This password manager was made purely for personal use, but feel free to use and edit it in any manner you would like.
-###### Siverv
+#### - Siverv
