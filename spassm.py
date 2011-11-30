@@ -87,7 +87,8 @@ def switch(bytes,key):
     return output
 
 def stitch(pairs,masterkey):
-    data = ";".join([(code+":"+pairs[code]) for code in pairs]).encode("Latin-1")
+    pairs
+    data = ";".join([(code+":"+pairs[code]) for code in sorted(pairs.keys())]).encode("Latin-1")
     for key in masterkey:
         data = switch(data,key).encode("Latin-1")
     return data
@@ -118,7 +119,7 @@ if __name__ == "__main__":
                         if len(pair.split(":")) != 2:
                             print(repr(pair))
                         code,passw = pair.split(":")
-                        pairs[code] = passw;
+                        pairs[code] = passw
                 if sys.argv[3] == "add" and len(sys.argv) == 6:
                     if sys.argv[4] not in pairs.keys():
                         pairs[sys.argv[4]] = sys.argv[5]
